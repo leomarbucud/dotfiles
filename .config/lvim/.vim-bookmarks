@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/home/leomar/.config/lvim/lua/user/neovide.lua': [{'sign_idx': 9501, 'line_nr': 15, 'content': 'local change_scale_factor = function(delta)'},],'/home/leomar/.config/lvim/lua/user/options.lua': [{'sign_idx': 9502, 'line_nr': 29, 'content': 'vim.g.bookmark_auto_save = 1;'},],'/home/leomar/.config/lvim/lua/user/keymaps.lua': [{'sign_idx': 9500, 'line_nr': 36, 'content': 'lvim.keys.normal_mode["<F3>"] = ":SymbolsOutline<CR>";'},],}}
+let l:bm_current_session = 'default'
