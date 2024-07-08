@@ -8,6 +8,7 @@ local home = os.getenv('HOME')
 dap.adapters.php = {
     type = 'executable',
     command = 'node',
+    -- Install this to home directory https://github.com/xdebug/vscode-php-debug
     args = { home .. '/vscode-php-debug/out/phpDebug.js' }
 }
 
