@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# kill itself first
+kill -9 $(pgrep -f ${BASH_SOURCE[0]} | grep -v $$)
+
 max_volume=130 # in percent
 
 pactl subscribe \
@@ -9,4 +13,5 @@ pactl subscribe \
     if (( volume > max_volume )); then
         pactl set-sink-volume $index $max_volume%;
     fi;
+    # dunstify -u low -h string:x-dunst-stack-tag:obvolume "Volume: $volume%" -t 1000
 done
