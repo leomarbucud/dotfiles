@@ -13,5 +13,5 @@ pactl subscribe \
     if (( volume > max_volume )); then
         pactl set-sink-volume $index $max_volume%;
     fi;
-    # dunstify -u low -h string:x-dunst-stack-tag:obvolume "Volume: $volume%" -t 1000
+    # dunstify -u low -h string:x-dunst-stack-tag:obvolume "Volume: $volume%" -t 5000
 done

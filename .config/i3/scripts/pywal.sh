@@ -16,7 +16,7 @@ WALLPAPER=$WALLPAPER1
 
 # Get colors
 pywal_get() {
-	wal -i "$WALLPAPER" --saturate 0.8
+	wal -i "$WALLPAPER" --saturate 0.8 -s
     ~/.config/dunst/launch_dunst.sh
 }
 
@@ -50,7 +50,7 @@ change_color() {
 	}
 	EOF
 	
-	polybar-msg cmd restart
+	# polybar-msg cmd restart
 }
 
 # Random wallpaper

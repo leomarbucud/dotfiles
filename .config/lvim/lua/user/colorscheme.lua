@@ -1,4 +1,5 @@
-lvim.colorscheme = "darkplus"
+-- lvim.colorscheme = "darkplus"
+lvim.colorscheme = "catppuccin"
 
 vim.g.transparent_background = true        -- transparent background(Default: false)
 vim.g.italic_comments = true               -- italic comments(Default: true)
