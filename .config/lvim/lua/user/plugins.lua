@@ -45,5 +45,6 @@ lvim.plugins = {
                 }
             })
         end
-    }
+    },
+    { "norcalli/nvim-colorizer.lua" }
 }

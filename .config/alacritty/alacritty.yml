@@ -4,13 +4,13 @@ env:
 font:
   size: 9.5
   normal:
-    family: MesloLGS Nerd Font
+    family: FiraCode Nerd Font
   bold:
-    family:  MesloLGS Nerd Font
+    family:  FiraCode Nerd Font Bold
   italic:
-    family: MesloLGS Nerd Font
+    family: FiraCode Nerd Font Italic
   bold_italic:
-    family: MesloLGS Nerd Font
+    family: FiraCode Nerd Font Bold Italic
 
   # scale_with_dpi: true
 # import:
