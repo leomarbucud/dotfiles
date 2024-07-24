@@ -38,3 +38,6 @@ lvim.keys.normal_mode["<F3>"] = ":SymbolsOutline<CR>";
 -- bookmarks
 lvim.keys.normal_mode["<Leader>B"] = ":lua require('telescope').extensions.vim_bookmarks.all()<CR>"
 lvim.keys.normal_mode["<Leader>BB"] = ":lua require('telescope').extensions.vim_bookmarks.current_file()<CR>"
+
+-- search
+lvim.keys.normal_mode["<C-f>"] = ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>"

@@ -46,5 +46,6 @@ lvim.plugins = {
             })
         end
     },
-    { "norcalli/nvim-colorizer.lua" }
+    { "norcalli/nvim-colorizer.lua" },
+    { "nvim-telescope/telescope-live-grep-args.nvim" }
 }

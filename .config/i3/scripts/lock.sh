@@ -1,5 +1,8 @@
 #!/bin/bash
 
+betterlockscreen -l
+exit 0
+
 #Constants
 DISPLAY_RE="([0-9]+)x([0-9]+)\\+([0-9]+)\\+([0-9]+)" # Regex to find display dimensions
 PARAMS="-colorspace sRGB" # ensure that images are created in sRGB colorspace, to avoid greyscale output
@@ -140,6 +143,8 @@ do
   #If we are reading the line that contains the position information:
   if [[ $LINE =~ $DISPLAY_RE ]]; then
     #Extract information and append some parameters to the ones that will be given to ImageMagick:
+    # SCREEN_WIDTH=${BASH_REMATCH[1]}
+    # SCREEN_HEIGHT=${BASH_REMATCH[2]}
     SCREEN_WIDTH=${BASH_REMATCH[1]}
     SCREEN_HEIGHT=${BASH_REMATCH[2]}
     SCREEN_X=${BASH_REMATCH[3]}

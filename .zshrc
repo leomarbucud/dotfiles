@@ -3,7 +3,8 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="xiong-chiamiov-plus"
+# ZSH_THEME="xiong-chiamiov-plus"
+ZSH_THEME="amuse"
 
 plugins=( 
     git
@@ -23,3 +24,7 @@ alias lg="lazygit"
 
 PATH="$PATH":"$HOME/.local/scripts/"
 bindkey -s ^f "tmux-sessionizer\n"
+
+export EDITOR='lvim'
+
+alias sysup="sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y"

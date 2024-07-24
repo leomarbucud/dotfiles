@@ -11,12 +11,13 @@ recentrepos:
     - /var/www/projects/study/particles
     - /home/leomar/Downloads/ft-labsPicom/picom
     - /var/www/projects/study/thanos
-    - /mnt/AA0E7FCB0E7F8F57/Downloads/fdev31Picom/picom
     - /home/leomar/Downloads/yshuiPicom/picom
 startuppopupversion: 5
 lastversion: 0.43.1
 customcommandshistory:
     - git merge master
+    - git stash pop
+    - git stash
     - git checkout -b feature_supplier_invoice_automation
     - git merge feature_last_mile
     - git push origin mster
