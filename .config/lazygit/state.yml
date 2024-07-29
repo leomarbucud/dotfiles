@@ -15,6 +15,7 @@ recentrepos:
 startuppopupversion: 5
 lastversion: 0.43.1
 customcommandshistory:
+    - git merge feature_supplier_invoice_automation
     - git merge master
     - git stash pop
     - git stash

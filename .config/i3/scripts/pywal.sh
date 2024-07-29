@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dunstify -u low -h string:x-dunst-stack-tag:wallpaper "Setting up wallpaper..." -t 5000
+
 # Color files
 PFILE="$HOME/dotfiles/.config/polybar/colors.ini"
 RFILE="$HOME/dotfiles/.config/rofi/colors/system.rasi"
@@ -22,7 +24,7 @@ pywal_get() {
 
 # Change colors
 change_color() {
-    # return 0;
+    return 0;
 	# polybar
 	sed -i -e "s/background = #.*/background = $BG/g" $PFILE
 	sed -i -e "s/foreground = #.*/foreground = $FG/g" $PFILE
@@ -107,3 +109,4 @@ else
 	echo "[!] 'pywal' is not installed."
 fi
 
+dunstify -u low -h string:x-dunst-stack-tag:wallpaper "Wallpaper set!" -t 2000

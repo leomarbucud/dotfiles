@@ -5,5 +5,5 @@ Xft.hintstyle: hintnone
 Xft.hinting: 0
 Xft.antialias: 1
 Xft.rbga: rgb
-Xft.dpi: 144
-! Xft.dpi: 96
+! Xft.dpi: 144
+Xft.dpi: 96
