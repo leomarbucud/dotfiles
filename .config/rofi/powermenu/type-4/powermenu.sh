@@ -91,7 +91,7 @@ case ${chosen} in
         ;;
     $lock)
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
+			~/.config/i3/scripts/lock.sh
 		elif [[ -x '/usr/bin/i3lock' ]]; then
             ~/.config/i3/i3lock-multimonitor/lock
 		fi
