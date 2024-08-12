@@ -1,7 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
-    - /home/leomar/Docker/flowerbox/www
     - /home/leomar/dotfiles
+    - /home/leomar/Docker/flowerbox/www
+    - /home/leomar/Documents/Obsidian Vault
     - /var/www/projects/farmbox/front_end
     - /var/www/projects/flowerbox
     - /var/www/projects/farmbox/api_platform
@@ -15,6 +16,8 @@ recentrepos:
 startuppopupversion: 5
 lastversion: 0.43.1
 customcommandshistory:
+    - git checkout -b feature_colombia_availability
+    - git fetch origin feature-report-signature
     - git merge feature_supplier_invoice_automation
     - git merge master
     - git stash pop

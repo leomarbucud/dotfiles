@@ -19,7 +19,7 @@ WALLPAPER=$WALLPAPER1
 # Get colors
 pywal_get() {
 	wal -i "$WALLPAPER" --saturate 0.8 -s
-    ~/.config/dunst/launch_dunst.sh
+    # ~/.config/dunst/launch_dunst.sh
 }
 
 # Change colors
@@ -66,8 +66,11 @@ random() {
 # Main
 if [[ -x "`which wal`" ]]; then
     if [ $1 == "-r" ]; then
-        WALLPAPER=$(random)
-        sed -i 's@file=.*@file='$WALLPAPER'@' ~/.config/nitrogen/bg-saved.cfg
+        WALLPAPER1=$(random)
+        WALLPAPER2=$(random)
+        sed -i '2s@file=.*@file='$WALLPAPER1'@' ~/.config/nitrogen/bg-saved.cfg
+        sed -i '7s@file=.*@file='$WALLPAPER2'@' ~/.config/nitrogen/bg-saved.cfg
+        sleep 2
         nitrogen --restore 2> /dev/null
     else
         if [[ ! -f "$WALLPAPER" ]]; then
@@ -100,7 +103,7 @@ if [[ -x "`which wal`" ]]; then
 		SH7=`printf "%s\n" "${color2}"`
 		SH8=`printf "%s\n" "${color4}"`
 
-		change_color
+		# change_color
 	else
 		echo -e "[!] Please enter the path to wallpaper. \n"
 		echo "Usage : ./pywal.sh path/to/image"

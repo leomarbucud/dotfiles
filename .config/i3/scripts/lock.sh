@@ -1,3 +1,3 @@
 #!/bin/bash
 
-betterlockscreen -l dim --off 90
+betterlockscreen -l dim --off 90 --display 2
