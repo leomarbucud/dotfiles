@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Set window title
+echo -ne "\033]0;Dev\007"
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
