@@ -41,3 +41,6 @@ lvim.keys.normal_mode["<Leader>BB"] = ":lua require('telescope').extensions.vim_
 
 -- search
 lvim.keys.normal_mode["<C-f>"] = ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>"
+
+-- select all
+lvim.keys.normal_mode["<C-a>"] = "ggVG"
