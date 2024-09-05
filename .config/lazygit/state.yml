@@ -16,11 +16,13 @@ recentrepos:
 startuppopupversion: 5
 lastversion: 0.43.1
 customcommandshistory:
+    - git merge master
+    - git checkout -b feature_use_marketing_colors
+    - git checkout -b feature_different_picking_order_date
     - git stash pop
     - git rebase
     - git stash
     - git fetch
-    - git merge master
     - git checkout -b feature_colombia_availability
     - git fetch origin feature-report-signature
     - git merge feature_supplier_invoice_automation
