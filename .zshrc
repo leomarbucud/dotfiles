@@ -19,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 # pokemon-colorscripts --no-title -s -r
 
 alias vim="lvim"
-alias nvim="lvim"
+# alias nvim="lvim"
 alias lg="lazygit"
 
 PATH="$PATH":"$HOME/.local/scripts/"
@@ -28,3 +28,11 @@ bindkey -s ^f "tmux-sessionizer\n"
 export EDITOR='lvim'
 
 alias sysup="sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y"
+
+export PATH=/home/leomar/.local/bin:$PATH
+
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

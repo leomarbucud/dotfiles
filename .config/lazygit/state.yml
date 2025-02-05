@@ -1,22 +1,20 @@
 lastupdatecheck: 0
 recentrepos:
-    - /home/leomar/Docker/flowerbox/www
     - /home/leomar/dotfiles
-    - /home/leomar/Documents/Obsidian Vault
-    - /var/www/projects/farmbox/front_end
-    - /var/www/projects/flowerbox
-    - /var/www/projects/farmbox/api_platform
-    - /home/leomar/Downloads/picom
-    - /var/www/projects/study/code-snippet
-    - /var/www/projects/study/anime-app
-    - /var/www/projects/study/particles
-    - /home/leomar/Downloads/ft-labsPicom/picom
-    - /var/www/projects/study/thanos
-    - /home/leomar/Downloads/yshuiPicom/picom
+    - /home/leomar/Projects/Work/flowerbox
+    - /home/leomar/Projects/Work/masterdata_api
+    - /home/leomar/Docker/masterdata
+    - /home/leomar/Docker/farmbox
+    - /home/leomar/Docker/flowerbox
+    - /home/leomar/Projects/Work/farmbox_api
+    - /home/leomar/Docker/logibox
 startuppopupversion: 5
-lastversion: 0.43.1
+lastversion: 0.44.1
 customcommandshistory:
     - git merge master
+    - git checkout -b feature/supplier-invoice
+    - git reset --soft HEAD~1
+    - git pull origin feature_client_dashboard
     - git checkout -b feature_use_marketing_colors
     - git checkout -b feature_different_picking_order_date
     - git stash pop

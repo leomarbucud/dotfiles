@@ -21,7 +21,7 @@ lvim.keys.normal_mode["<F12>"] = ":lua require'dap'.step_out()<CR>"
 lvim.keys.normal_mode["<F6>"] = ":lua require'dapui'.toggle({ reset = true })<CR> <BAR> :lua require'dap'.disconnect()<CR>"
 
 -- restore session
-lvim.keys.normal_mode["<Leader>r"] = ":lua require'persistence'.load()<CR>"
+-- lvim.keys.normal_mode["<Leader>r"] = ":lua require'persistence'.load()<CR>"
 
 -- php documentation
 lvim.keys.normal_mode["<C-p>"] = ":call pdv#DocumentWithSnip()<CR>"

@@ -8,9 +8,16 @@ if [[ $# -eq 1 ]]; then
 else
     selected=$(find \
         ~/Docker/flowerbox \
-        ~/Docker/flowerbox/www \
+        ~/Docker/masterdata \
+        ~/Docker/farmbox \
+        ~/Docker/logibox \
+        ~/Projects/Work/flowerbox \
+        ~/Projects/Work/farmbox_ui \
+        ~/Projects/Work/farmbox_api \
+        ~/Projects/Work/logibox_ui \
+        ~/Projects/Work/logibox_api \
+        ~/Projects/Work/masterdata_api \
         ~/dotfiles \
-        ~/.config/i3 \
         -mindepth 0 -maxdepth 0 -type d | fzf)
 fi
 
@@ -18,7 +25,8 @@ if [[ -z $selected ]]; then
     exit 0
 fi
 
-selected_name=$(basename "$selected" | tr . _)
+# selected_name=$(basename "$selected" | tr . _)
+selected_name=$(echo "$selected" | sed 's/\//-/g')
 tmux_running=$(pgrep tmux)
 
 if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then

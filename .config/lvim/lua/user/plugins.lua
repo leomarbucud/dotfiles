@@ -47,5 +47,6 @@ lvim.plugins = {
         end
     },
     { "norcalli/nvim-colorizer.lua" },
-    { "nvim-telescope/telescope-live-grep-args.nvim" }
+    { "nvim-telescope/telescope-live-grep-args.nvim" },
+    { "windwp/nvim-ts-autotag" }
 }

@@ -19,7 +19,7 @@ dap.configurations.php = {
         name = 'Listen for Xdebug',
         port = 9003,
         pathMappings = {
-            ['/var/www/html'] = home .. '/Docker/flowerbox/www'
+            ['/var/www/html/'] = "${workspaceFolder}"
         }
     }
 }

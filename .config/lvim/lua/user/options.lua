@@ -11,7 +11,7 @@ vim.opt.foldenable = false
 
 -- pdv php documentation adding comment blocks
 local home = os.getenv('HOME')
-vim.g.pdv_template_dir = home .. "/.local/share/nvim/site/pack/packer/start/pdv/templates_snip"
+vim.g.pdv_template_dir = home .. "/.local/share/lunarvim/site/pack/lazy/opt/pdv/templates_snip"
 
 -- transparent window
 lvim.transparent_window = true
