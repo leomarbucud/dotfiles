@@ -11,15 +11,15 @@ else
         ~/Docker/masterdata \
         ~/Docker/farmbox \
         ~/Docker/logibox \
-        ~/Projects/Work/flowerbox \
-        ~/Projects/Work/farmbox_ui \
-        ~/Projects/Work/farmbox_api \
-        ~/Projects/Work/logibox_ui \
-        ~/Projects/Work/logibox_api \
-        ~/Projects/Work/masterdata_api \
         ~/dotfiles \
         -mindepth 0 -maxdepth 0 -type d | fzf)
 fi
+        # ~/Projects/Work/flowerbox \
+        # ~/Projects/Work/farmbox_ui \
+        # ~/Projects/Work/farmbox_api \
+        # ~/Projects/Work/logibox_ui \
+        # ~/Projects/Work/logibox_api \
+        # ~/Projects/Work/masterdata_api \
 
 if [[ -z $selected ]]; then
     exit 0

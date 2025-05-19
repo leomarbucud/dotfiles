@@ -2,11 +2,13 @@ lastupdatecheck: 0
 recentrepos:
     - /home/leomar/dotfiles
     - /home/leomar/Projects/Work/flowerbox
-    - /home/leomar/Projects/Work/masterdata_api
     - /home/leomar/Docker/masterdata
-    - /home/leomar/Docker/farmbox
+    - /home/leomar/Projects/Work/masterdata
     - /home/leomar/Docker/flowerbox
     - /home/leomar/Projects/Work/farmbox_api
+    - /home/leomar/Docker/farmbox
+    - /home/leomar/Projects/Work/masterdata_api
+    - /home/leomar/Projects/Work/farmbox_ui
     - /home/leomar/Docker/logibox
 startuppopupversion: 5
 lastversion: 0.44.1
@@ -28,7 +30,7 @@ customcommandshistory:
     - git merge feature_last_mile
     - git push origin mster
     - q
-hidecommandlog: false
+hidecommandlog: true
 ignorewhitespaceindiffview: false
 diffcontextsize: 3
 renamesimilaritythreshold: 50
